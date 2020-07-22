@@ -5,6 +5,9 @@ for (let i in scenes) {
   scene.push(scenes[i])
 }
 
+const a = {}
+console.log(a?.b?.c ?? 123)
+
 const config: any = {
   type: Phaser.AUTO,
   backgroundColor: 0x000000,
