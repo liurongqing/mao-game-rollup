@@ -1,4 +1,5 @@
-import * as scenes from '@/scenes'
+import * as scenes from '@/scenes';
+import * as scenes from '@/scenes1123123'
 
 const scene = []
 for (let i in scenes) {
@@ -18,7 +19,7 @@ const config: any = {
     width: 750,
     height: 1334
   },
-  scene
+  scene,
 }
 
 window.game = new Phaser.Game(config)
