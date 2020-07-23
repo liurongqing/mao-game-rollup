@@ -1,4 +1,4 @@
-import common from 'rollup-plugin-commonjs'
+import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import serve from 'rollup-plugin-serve'
@@ -10,7 +10,7 @@ export default {
         file: './dist/game.js',
         name: 'mm',
         format: 'iife',
-        sourcemap: true,
+        sourcemap: false,
         intro: 'var global = window;'
     },
     plugins: [
@@ -30,10 +30,13 @@ export default {
                 'node_modules/eventemitter3/**',
                 'node_modules/phaser/**'
             ],
-            exclude: [],
+            exclude: [
+                'node_modules/phaser/src/polyfills/requestAnimationFrame.js'
+            ],
             sourceMap: true,
             ignoreGlobal: true
         }),
-        typescript()
+        typescript(),
+        uglify({ mangle: false })
     ]
 }
