@@ -37,14 +37,8 @@ export default {
             ignoreGlobal: true
         }),
         typescript(),
-        serve({
-            open: true,
-            contentBase: 'dist',
-            host: 'localhost',
-            port: 10001,
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
+        uglify({
+            mangle: false
         })
     ]
 }
