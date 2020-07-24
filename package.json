@@ -7,7 +7,9 @@
     "scripts": {
         "start": "rollup --config rollup.dev.js",
         "build": "rollup --config rollup.dist.js",
-        "watch": "rollup --watch --config rollup.dev.js"
+        "watch": "rollup --watch --config rollup.dev.js",
+        "test": "tsc test",
+        "tsc-version": "tsc -v"
     },
     "license": "MIT",
     "devDependencies": {

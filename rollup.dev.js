@@ -10,7 +10,7 @@ export default {
         file: './dist/game.js',
         name: 'mm',
         format: 'iife',
-        sourcemap: false,
+        sourcemap: true,
         intro: 'var global = window;'
     },
     plugins: [

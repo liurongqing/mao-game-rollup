@@ -10,7 +10,7 @@ export default {
         file: './dist/game.js',
         name: 'mm',
         format: 'iife',
-        sourcemap: true,
+        sourcemap: false,
         intro: 'var global = window;'
     },
     plugins: [
@@ -33,7 +33,7 @@ export default {
             exclude: [
                 'node_modules/phaser/src/polyfills/requestAnimationFrame.js'
             ],
-            sourceMap: true,
+            sourceMap: false,
             ignoreGlobal: true
         }),
         typescript(),
