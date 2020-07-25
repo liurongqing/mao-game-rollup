@@ -1,26 +1,25 @@
-// import 'phaser'
-
-// export default class Demo extends Phaser.Scene {
-//     constructor() {
-//         super('DemoScene')
-//     }
-
-//     preload() { }
-
-//     create() { }
-// }
-
-// const config = {
-//     type: Phaser.AUTO,
-//     backgroundColor: '#122333',
-//     width: 800,
-//     height: 600,
-//     scene: Demo
-// }
-
-// const game = new Phaser.Game(config)
+import 'phaser'
 
 
-const a = {}
-console.log(a)
-console.log('a?.b?.c', a.b?.c)
+import * as scenes from './scenes'
+
+const scene = []
+for (let i in scenes) {
+    scene.push(scenes[i])
+}
+
+const config = {
+    type: Phaser.AUTO,
+    backgroundColor: '#122333',
+    width: 800,
+    height: 600,
+    scene,
+    audio: {
+        noAudio: true
+    },
+    banner: {
+        hidePhaser: true
+    }
+}
+
+const game = new Phaser.Game(config)

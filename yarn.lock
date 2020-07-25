@@ -356,10 +356,10 @@ path@^0.12.7:
     process "^0.11.1"
     util "^0.10.3"
 
-phaser@^3.24.1:
-  version "3.24.1"
-  resolved "https://registry.yarnpkg.com/phaser/-/phaser-3.24.1.tgz#376e0c965d2a35af37c06ee78627dafbde5be017"
-  integrity sha512-WbrRMkbpEzarkfrq83akeauc6b8xNxsOTpDygyW7wrU2G2ne6kOYu3hji4UAaGnZaOLrVuj8ycYPjX9P1LxcDw==
+phaser@^3.25.0-beta.0:
+  version "3.25.0-beta.0"
+  resolved "https://registry.yarnpkg.com/phaser/-/phaser-3.25.0-beta.0.tgz#c2d3065fe46cad036279b52ad2f6918c7840057a"
+  integrity sha512-Y6DOCmfdfpJllqVNxttaKG2+5Lb4vqamjwVU0Awzm3bTSyP8k3+qwTBN+NwHb3RmfHTm2tEaBtEvLeELgZqyLQ==
   dependencies:
     eventemitter3 "^4.0.4"
     exports-loader "^1.1.0"

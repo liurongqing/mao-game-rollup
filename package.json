@@ -5,11 +5,8 @@
     "repository": "git@github.com:liurongqing/mao-game.git",
     "author": "liurongqing <phpgege@gmail.com>",
     "scripts": {
-        "start": "rollup --config rollup.dev.js",
-        "build": "rollup --config rollup.dist.js",
-        "watch": "rollup --watch --config rollup.dev.js",
-        "test": "tsc test",
-        "tsc-version": "tsc -v"
+        "start": "rollup --watch --config rollup.dev.js",
+        "build": "rollup --config rollup.dist.js"
     },
     "license": "MIT",
     "devDependencies": {
@@ -23,6 +20,6 @@
         "typescript": "^3.9.7"
     },
     "dependencies": {
-        "phaser": "^3.24.1"
+        "phaser": "^3.25.0-beta.0"
     }
 }
