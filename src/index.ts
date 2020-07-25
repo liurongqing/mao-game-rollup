@@ -1,6 +1,4 @@
 import 'phaser'
-
-
 import * as scenes from './scenes'
 
 const scene = []
@@ -10,16 +8,21 @@ for (let i in scenes) {
 
 const config = {
     type: Phaser.AUTO,
-    backgroundColor: '#122333',
     width: 800,
     height: 600,
-    scene,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 200 }
+        }
+    },
     audio: {
         noAudio: true
     },
     banner: {
         hidePhaser: true
-    }
+    },
+    scene,
 }
 
 const game = new Phaser.Game(config)
