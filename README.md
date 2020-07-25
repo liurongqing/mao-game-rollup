@@ -15,7 +15,7 @@
 ## 快速开始
 
 ```bash
-yarn install # 安装依赖
+yarn # 安装依赖
 yarn start # 本地运行
 yarn build # 打包生产
 ```
@@ -28,7 +28,7 @@ src // 源码
   scenes // 场景
   utils // 公用方法
   services // 后端服务
-dist // 编译后文件
+dist // 编译后文件、首页、静态资源
   index.html // 首页
   assets // 静态资源
 .editorconfig // VSCode 安装 EditorConfig for VS Code 配合使用
