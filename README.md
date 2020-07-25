@@ -47,17 +47,25 @@ tsconfig.json // 为了让 VSCode 识别 Typescript 语法
    yarn global add -D http-server
    ```
 
-2. 启动服务
+1. 启动服务
 
    ```bash
    http-server ./dist
    ```
 
-3. 访问
+1. 访问
 
    ```bash
-   http://127.0.0.1:8080
+   http://127.0.0.1:10001
    ```
+## 小知识点
+
+1. 更新 npm 包
+
+  ```bash
+  yarn upgrade-interactive --lastest # 空格: 选择  i: 反选  a: 全选 会更新 yarn.lock 文件，不会更新package.json文件
+  yarn upgrade phaser@lastest # 更新到最新，并更新 package.json 文件
+  ```
 
 ## 问题反馈
 
