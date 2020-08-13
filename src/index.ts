@@ -1,4 +1,3 @@
-import 'phaser'
 import * as scenes from './scenes'
 
 const scene = []
